@@ -1,0 +1,144 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Homework</title>  
+    <style>
+    body {  
+        font-family: Tahoma;  
+        background-color: #100054;  
+        margin: 0;  
+        padding: 3px;  
+    }  
+    h1{
+        color: #00796b;
+    }  
+    h2 {    
+        background-color: #430094;
+        border: 1px solid #4dd0e1;
+        padding: 10px; 
+        color: #00796b; 
+    }
+    .container {  
+        background-color: white;  
+        border-radius: 8px;
+        padding: 20px;
+        position: relative;
+    }
+    img {  
+        max-width: 100%;  
+        height: auto;   
+        position: absolute;  
+        top: 98px;
+        right: 20px;
+    } 
+    table {  
+        border: 2px solid black;
+        border-collapse: collapse;  
+        margin: 20px 0;
+        font-weight: bolder; 
+    } 
+    th{ 
+        text-align: center;
+        vertical-align: middle; 
+        border: 2px solid black;  
+        padding: 8px;    
+    }
+    td{
+        border: 2px solid black;  
+        padding: 8px;  
+        text-align:left; 
+    }
+    .uline{
+        text-decoration: underline;
+	color: red;
+    }
+    .backgr{
+        background-color: rgb(221, 219, 218);
+    }
+    .colortext1 {  
+        color: black;  
+    }  
+
+    .colortext2 {  
+        color: #0021b5; 
+    }
+    .textred {
+        color: red;
+    }
+    .submit-section {  
+        margin-top: 20px;  
+    }  
+    .note {
+        font-size: 0.9em;
+        color: gray;
+    }     
+    </style>
+</head>  
+<body style="color: #62bf6c;">  
+    <div class="container">  
+        <h1>Dog D. Dog</h1>  
+        <h2>About</h2>  
+        <p>Woof woof!</p>  
+        <p>Hi, I'm Dog. I love <strong class="colortext2">User Interface Design</strong>.</p>  
+        <img width="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOKMHiJChOypDcLzhbbnJrkfD5IXRFXe9NA&s" alt="Dog with glasses"> 
+        <h2>Courses</h2>  
+        <p>Here are some courses I've taken:</p>  
+        <table>  
+            <tr>  
+                <th>Course Number</th>  
+                <th>Course Title</th>  
+                <th>Semester Taken</th>  
+            </tr>
+            <tr>
+                <th colspan="3">For credit</th>
+            </tr>  
+            <tr class="backgr">  
+                <td class="colortext1">6.813</td>  
+                <td class="colortext2">User Interface Design</td>  
+                <td class="colortext2">Spring 2014</td>  
+            </tr>  
+            <tr >  
+                <td class="colortext1">6.034</td>  
+                <td>Artificial Intelligence</td>  
+                <td>Fall 2013</td>  
+            </tr>
+		<tr class="backgr">  
+                <td class="colortext1">6.006</td>  
+                <td>Introduction to Algorithms</td>  
+                <td>Fall 2013</td>  
+            </tr>  
+            <tr >  
+                <th colspan="3">Listener</th>  
+            </tr>  
+            <tr class="backgr">  
+                <td class="colortext2">6.867</td>  
+                <td>Machine Learning</td>  
+                <td>Fall 2013</td>  
+            </tr>  
+            <tr >  
+                <td class="colortext2">6.830</td>  
+                <td>Database Systems</td>  
+                <td>Fall 2012</td>  
+            </tr>  
+        </table>
+        <h2>Interests</h2>  
+        <p>I am interested in <strong class="uline">HCI</strong>, memes, and YouTube videos.</p>  
+        <div class="submit-section">  
+            <h2>Submit Pet Information</h2>  
+            <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>  
+            <form>  
+                <label for="name">Name<span class="textred">*</span>:</label>  
+                <input type="text" id="name" name="name" required> <br><br> 
+                <label for="age">Age<span class="textred">*</span>:</label>  
+                <input type="number" id="age" name="age" min="0" required><br><br>  
+                <label for="gender">Gender:</label>  
+                <input type="text" id="gender" name="gender"><br><br>  
+                <input type="submit" value="Submit">  
+            </form>  
+            <p class="note">Fields marked with <span  class="textred">*</span> are required.</p>
+        </div>  
+    </div>  
+</body>  
+</html>
